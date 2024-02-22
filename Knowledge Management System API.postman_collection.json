@@ -1,0 +1,1650 @@
+{
+	"info": {
+		"_postman_id": "22e5526a-fe27-4699-b174-096acd9b8503",
+		"name": "Knowledge Management System API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Beranda",
+			"item": [
+				{
+					"name": "Search, Filter, dan Sort",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/beranda?filter=&search=&sort=&page=1&limit=10",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"beranda"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "",
+									"description": "Filter Konten Berdasarkan Kategori"
+								},
+								{
+									"key": "search",
+									"value": "",
+									"description": "Search Konten Berdasar Judul atau Tags"
+								},
+								{
+									"key": "sort",
+									"value": "",
+									"description": "Urutkan Konten tanggal/liked"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "halaman"
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"description": "maximum content"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Search, Filter, dan Sort",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/beranda?filter=&search=&sort=&page=1&limit=5",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"beranda"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": "",
+											"description": "Filter Konten Berdasarkan Kategori"
+										},
+										{
+											"key": "search",
+											"value": "",
+											"description": "Search Konten Berdasar Judul atau Tags"
+										},
+										{
+											"key": "sort",
+											"value": "",
+											"description": "Urutkan Konten tanggal/liked"
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"description": "halaman"
+										},
+										{
+											"key": "limit",
+											"value": "5",
+											"description": "maximum content"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 08 Dec 2022 10:13:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.29"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://127.0.0.1:5173"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization, Token"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-control",
+									"value": "no-store, max-age=0, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"error\": null,\n    \"total\": 40,\n    \"data\": [\n        {\n            \"contentId\": \"akses-coolsisbpsgoid-capi-6388068297fa7\",\n            \"username\": \"tiara\",\n            \"tanggal\": \"2022-12-01 08:42:26\",\n            \"judul\": \"AKSES COOLSIS.BPS.GO.ID [CAPI]\",\n            \"isi_konten\": \"Untuk mengakses coolsis.bps.go.id jaringan internet harus terhubung melalui VPN BPS.\",\n            \"thumbnail\": \"default.png\",\n            \"liked\": \"1\",\n            \"commented\": \"0\",\n            \"kategori\": \"CAPI\",\n            \"tags\": \"\",\n            \"status\": \"Diterima\",\n            \"nama\": \"Tiara Ayu Sihurina\",\n            \"user_photo\": \"7747401084.png\"\n        },\n        {\n            \"contentId\": \"akun-petugas-pk-sp2020-capi-63880945466fd\",\n            \"username\": \"tiara\",\n            \"tanggal\": \"2022-12-01 08:54:13\",\n            \"judul\": \"AKUN PETUGAS PK SP2020 [CAPI]\",\n            \"isi_konten\": \"Disarankan setiap petugas PK dibuatkan akun user baru khusus untuk kegiatan PK SP2020, meskipun telah memiliki akun untuk survei lain pada coolsis.Hal ini dilakukan agar tidak memberatkan saat dilakukan sinkronisasi dan hanya muncul kuesioner PK pada akun tersebut.\",\n            \"thumbnail\": \"default.png\",\n            \"liked\": \"0\",\n            \"commented\": \"0\",\n            \"kategori\": \"CAPI\",\n            \"tags\": \"#SP2020\",\n            \"status\": \"Diterima\",\n            \"nama\": \"Tiara Ayu Sihurina\",\n            \"user_photo\": \"7747401084.png\"\n        },\n        {\n            \"contentId\": \"analisis-desain-ux-pada-aplikasi-aplikasi-bps-dengan-studi-kasus-pada-aplikasi-android-allstats-spk-online-mfd-online-dan-community-bps-638767432fa0e\",\n            \"username\": \"hendra\",\n            \"tanggal\": \"2022-11-30 00:00:00\",\n            \"judul\": \"Analisis Desain UX pada Aplikasi-Aplikasi BPS dengan Studi Kasus pada Aplikasi Android Allstats, SPK Online, MFD Online, dan Community BPS\",\n            \"isi_konten\": \"Tautan aplikasi/website:Allstats BPSOriginal: Allstats BPS (Playstore)Redesain: webapps.bps.go.id/kayongutarakab/allstats-redesign/SPK OnlineOriginal: spkonline.bps.go.id atau SPK Android Official (Playstore)Redesain: webapps.bps.go.id/kayongutarakab/spk/MFD OnlineOriginal: mfdonline.bps.go.idRedesain: webapps.bps.go.id/kayongutarakab/kode-wilayah/...\",\n            \"thumbnail\": \"default.png\",\n            \"liked\": \"1\",\n            \"commented\": \"0\",\n            \"kategori\": \"Integration\",\n            \"tags\": \"\",\n            \"status\": \"Diterima\",\n            \"nama\": \"Hendra Kusuma\",\n            \"user_photo\": \"874576510.png\"\n        },\n        {\n            \"contentId\": \"analisis-ketenagakerjaan-menggunakan-big-data-63876ac7b6c08\",\n            \"username\": \"hendra\",\n            \"tanggal\": \"2022-11-30 00:00:00\",\n            \"judul\": \"Analisis Ketenagakerjaan Menggunakan Big Data\",\n            \"isi_konten\": \"Semakin mudahnya akses internet di Indonesia saat ini telah mendorong minat masyarakat untuk mencari kesempatan kerja secara online. Jobs.id merupakan salah satu situs yang banyak dijadikan rujukan masyarakat untuk menemukan peluang tersebut. Bahkan, para pencari kerja juga dapat melakukan lamaran langsung melalui situs ini dan memantau prosesnya.B...\",\n            \"thumbnail\": \"default.png\",\n            \"liked\": \"1\",\n            \"commented\": \"0\",\n            \"kategori\": \"SP2020\",\n            \"tags\": \"#analisis,#bigdata\",\n            \"status\": \"Diterima\",\n            \"nama\": \"Hendra Kusuma\",\n            \"user_photo\": \"874576510.png\"\n        },\n        {\n            \"contentId\": \"assign-sampel-petugas-pk-capi-6387762e8c30c\",\n            \"username\": \"fais\",\n            \"tanggal\": \"2022-11-30 00:00:00\",\n            \"judul\": \"ASSIGN SAMPEL PETUGAS PK [CAPI]\",\n            \"isi_konten\": \"Ketika meng-assign sampel ke petugas yang salah: Jika sampel yang di-assign masih berstatus “Open” (belum tersubmit), maka sampel tersebut tidak dapat dibatalkan/dihapus tetapi dapat di-assign ke petugas lain yang sebenarnya melalui assign by wilayah. PENTINGSaat proses assign, perlu kehati-hatian admin dalam meng-assign sampel kepada petugas. ...\",\n            \"thumbnail\": \"default.png\",\n            \"liked\": \"1\",\n            \"commented\": \"0\",\n            \"kategori\": \"CAPI\",\n            \"tags\": \"#SP2020\",\n            \"status\": \"Diterima\",\n            \"nama\": \"Muhammad Irfa'issurur\",\n            \"user_photo\": \"2151578300.png\"\n        },\n        {\n            \"contentId\": \"assignment-pending-diupload-capi-638809decae13\",\n            \"username\": \"tiara\",\n            \"tanggal\": \"2022-12-01 08:56:46\",\n            \"judul\": \"ASSIGNMENT PENDING DIUPLOAD [CAPI]\",\n            \"isi_konten\": \"Untuk synchronize dan kirim data, kondisi koneksi internet harus dalam kondisi stabil.\",\n            \"thumbnail\": \"default.png\",\n            \"liked\": \"0\",\n            \"commented\": \"0\",\n            \"kategori\": \"CAPI\",\n            \"tags\": \"\",\n            \"status\": \"Diterima\",\n            \"nama\": \"Tiara Ayu Sihurina\",\n            \"user_photo\": \"7747401084.png\"\n        },\n        {\n            \"contentId\": \"bagaimana-mengenali-petugas-sensus-september-2020-sensus-penduduk-2020-638772394f481\",\n            \"username\": \"fais\",\n            \"tanggal\": \"2022-11-30 00:00:00\",\n            \"judul\": \"BAGAIMANA MENGENALI PETUGAS SENSUS SEPTEMBER 2020? [SENSUS-PENDUDUK-2020]\",\n            \"isi_konten\": \"Petugas Sensus yang sedang bertugas memiliki ciri:1. Membawa surat tugas dari BPS Kabupaten/Kota Setempat2. Memakai tanda pengenal bertuliskan nama petugas dan dilengkapi barcode. Scan barcode untuk mengetahui identitas petugas sensus dari BPS3. Membawa tas punggung berwarna hitam dengan logo BPS dan Sensus Penduduk 2020.4. Menggunakan rompi berwar...\",\n            \"thumbnail\": \"638772394f009.png\",\n            \"liked\": \"0\",\n            \"commented\": \"0\",\n            \"kategori\": \"SP2020\",\n            \"tags\": \"#SP2020\",\n            \"status\": \"Diterima\",\n            \"nama\": \"Muhammad Irfa'issurur\",\n            \"user_photo\": \"2151578300.png\"\n        },\n        {\n            \"contentId\": \"big-data-untuk-statistik-sosial-analisis-ketenagakerjaan-menggunakan-big-data-63877107ea4ae\",\n            \"username\": \"fais\",\n            \"tanggal\": \"2022-11-30 00:00:00\",\n            \"judul\": \"[Big Data untuk Statistik Sosial] Analisis Ketenagakerjaan Menggunakan Big Data\",\n            \"isi_konten\": \"Untuk mendukung penyediaan data ketenagakerjaan di Badan Pusat Statistik (BPS), pemanfaatan big data dapat digunakan untuk mengamati perkembangan keadaan permintaan tenaga kerja serta menganalisis dampak dari suatu fenomena yang terjadi. Fenomena yang terjadi saat ini yaitu pandemi Covid-19 telah berdampak pada berbagai sektor. Sektor ketenagakerja...\",\n            \"thumbnail\": \"63877107ea138.png\",\n            \"liked\": \"0\",\n            \"commented\": \"0\",\n            \"kategori\": \"Big Data\",\n            \"tags\": \"#SP2020,#bigdata\",\n            \"status\": \"Diterima\",\n            \"nama\": \"Muhammad Irfa'issurur\",\n            \"user_photo\": \"2151578300.png\"\n        },\n        {\n            \"contentId\": \"big-data-untuk-statistik-sosial-pemanfaatan-big-data-dalam-pengumpulan-data-penerbangan-6387684f96be6\",\n            \"username\": \"hendra\",\n            \"tanggal\": \"2022-11-30 00:00:00\",\n            \"judul\": \"Big Data untuk Statistik Sosial] Pemanfaatan Big Data dalam Pengumpulan Data Penerbangan\",\n            \"isi_konten\": \"\\tIndonesia sebagai negara kepulauan terbesar dengan jumlah penduduk yang besar dihadapkan pada tantangan besar di bidang transportasi. Permintaan jasa transportasi udara terus meningkat dari tahun ke tahun seiring dengan pertambahan jumlah penduduk dan kesejahteraan masyarakatnya. Pentingnya sektor transportasi udara harus dibarengi dengan kebijaka...\",\n            \"thumbnail\": \"default.png\",\n            \"liked\": \"1\",\n            \"commented\": \"0\",\n            \"kategori\": \"Big Data\",\n            \"tags\": \"#bigdata,#knowledge\",\n            \"status\": \"Diterima\",\n            \"nama\": \"Hendra Kusuma\",\n            \"user_photo\": \"874576510.png\"\n        },\n        {\n            \"contentId\": \"coba-6388204e076b5\",\n            \"username\": \"hatmi\",\n            \"tanggal\": \"2022-12-01 10:32:30\",\n            \"judul\": \"Coba\",\n            \"isi_konten\": \"Coba Konten\",\n            \"thumbnail\": \"default.png\",\n            \"liked\": \"0\",\n            \"commented\": \"2\",\n            \"kategori\": \"Big Data untuk Statistik Sosial\",\n            \"tags\": \"#testing,#coba\",\n            \"status\": \"Diterima\",\n            \"nama\": \"Hatmi Yutika\",\n            \"user_photo\": \"6374580193.png\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Buat Konten",
+			"item": [
+				{
+					"name": "Buat Konten",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjEzNTY5OTk1MjQsIm5iZiI6MTM1NzAwMDAwMCwidXNlcm5hbWUiOiJoZW5kcmEiLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsIm5hbWEiOiJIZW5kcmEgS3VzdW1hIiwidW5pdF9rZXJqYSI6IktlcGFsYSBCYWRhbiBQdXNhdCBTdGF0aXN0aWsifQ.48kOmoK4Y9Rh7BOLYYz5eu-Fv6Hdybybba63F-SEuyY"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "user1",
+									"type": "text"
+								},
+								{
+									"key": "judul",
+									"value": "Latar Belakang Sensus Penduduk 2020",
+									"type": "text"
+								},
+								{
+									"key": "isi_konten",
+									"value": "Sebagaimana tertuang dalam Undang-Undang No. 16 Tahun 1997 tentang Statistik, Badan Pusat Statistik (BPS) diamanatkan untuk melaksanakan sensus penduduk sekurang-kurangnya sekali dalam sepuluh tahun. Dalam perjalanannya, sensus penduduk\n\ndi Indonesia sudah dilaksanakan sebanyak enam kali sejak Indonesia merdeka, yaitu pada tahun 1961, 1971, 1980, 1990, 2000, dan 2010. Sensus Penduduk 2020 (SP2020) merupakan sensus penduduk ketujuh yang akan segera dilaksanakan pada tahun 2020 mendatang. Selain amanat undang-undang, penyelenggaraan sensus penduduk juga direkomendasikan Perserikatan Bangsa-Bangsa (PBB).\n\nKekuatan data sensus penduduk terletak pada kemampuannya menyediakan statistik dasar secara komprehensif dengan beragam kompleksitas perubahannya sampai wilayah administratif terkecil. Data sensus penduduk juga bermanfaat sebagai dasar menghitung parameter-parameter kependudukan, pembentukan kerangka sampel, dan penyusunan proyeksi penduduk. Selain itu, data SP2020 juga sangat bermanfaat bagi perencanaan pembangunan baik oleh pemerintah pusat maupun daerah.",
+									"type": "text"
+								},
+								{
+									"key": "thumbnail",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "kategori",
+									"value": "Sensus Penduduk 2020",
+									"type": "text"
+								},
+								{
+									"key": "tags",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{baseUrl}}/api/content"
+					},
+					"response": [
+						{
+							"name": "Buat Konten",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "user1",
+											"type": "text"
+										},
+										{
+											"key": "judul",
+											"value": "Latar Belakang Sensus Penduduk 2020",
+											"type": "text"
+										},
+										{
+											"key": "isi_konten",
+											"value": "Sebagaimana tertuang dalam Undang-Undang No. 16 Tahun 1997 tentang Statistik, Badan Pusat Statistik (BPS) diamanatkan untuk melaksanakan sensus penduduk sekurang-kurangnya sekali dalam sepuluh tahun. Dalam perjalanannya, sensus penduduk\n\ndi Indonesia sudah dilaksanakan sebanyak enam kali sejak Indonesia merdeka, yaitu pada tahun 1961, 1971, 1980, 1990, 2000, dan 2010. Sensus Penduduk 2020 (SP2020) merupakan sensus penduduk ketujuh yang akan segera dilaksanakan pada tahun 2020 mendatang. Selain amanat undang-undang, penyelenggaraan sensus penduduk juga direkomendasikan Perserikatan Bangsa-Bangsa (PBB).\n\nKekuatan data sensus penduduk terletak pada kemampuannya menyediakan statistik dasar secara komprehensif dengan beragam kompleksitas perubahannya sampai wilayah administratif terkecil. Data sensus penduduk juga bermanfaat sebagai dasar menghitung parameter-parameter kependudukan, pembentukan kerangka sampel, dan penyusunan proyeksi penduduk. Selain itu, data SP2020 juga sangat bermanfaat bagi perencanaan pembangunan baik oleh pemerintah pusat maupun daerah.",
+											"type": "text"
+										},
+										{
+											"key": "thumbnail",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "kategori",
+											"value": "Sensus Penduduk 2020",
+											"type": "text"
+										},
+										{
+											"key": "tags",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{baseUrl}}/api/content"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 08 Dec 2022 10:19:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.29"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://127.0.0.1:5173"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization, Token"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-control",
+									"value": "no-store, max-age=0, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"error\": null,\n    \"messages\": {\n        \"user\": \"user1\",\n        \"contentId\": \"latar-belakang-sensus-penduduk-2020-6391ba1f98958\",\n        \"success\": \"Konten berhasil ditambahkan.\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Konten Saya",
+			"item": [
+				{
+					"name": "Lihat Konten",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/view/{{contentId}}"
+					},
+					"response": [
+						{
+							"name": "Lihat Konten",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}/api/view/{{contentId}}"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 08 Dec 2022 10:25:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.29"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://127.0.0.1:5173"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization, Token"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-control",
+									"value": "no-store, max-age=0, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"contentId\": \"kolom-identifikasi-kejadian-kematian-diisi-jumlah-kejadian-kematian-63876a1f867aa\",\n    \"username\": \"hendra\",\n    \"tanggal\": \"2022-11-30 00:00:00\",\n    \"judul\": \"Kolom Identifikasi Kejadian Kematian Diisi Jumlah Kejadian Kematian\",\n    \"isi_konten\": \"<p><strong style=\\\"background-color: rgb(255, 255, 255); color: rgb(51, 51, 51);\\\">Temuan :</strong></p><ul><li>PPL mengisi kolom (18) (identifikasi kejadian kematian rumah tangga sejak 1 Januari 2017) dengan jumalah kejadian pada rumah tangga tersebut</li></ul><p><strong>Rekomendasi :</strong></p><ul><li>PPL meneliti isian kolom (18) sebelum diserahkan kepada Kortim</li><li>Kortim lebih teliti dalam melakukan pengecekan isian dari PPL sebelum diteruskan ke Koseka dan kemudian dilanjutkan untuk proses pengolahan</li><li>Kolom (18) seharusnya diisi dengan kode 0 jika tidak ada kejadian kematian dalam ruta tersebut dan kode 1 juka ada kejadian kematian</li><li>Kesalahan dalam pengisian identifikasi ini dapat menyebabkan rekapan jumlah rumah tangga dengan kejadian kematian tidak sesua</li><li>PPL bersama dengan kortim mengidentifikasi temuan ini dan memperbaiki isian kolom (18)</li></ul>\",\n    \"thumbnail\": \"default.png\",\n    \"liked\": \"0\",\n    \"commented\": \"0\",\n    \"kategori\": \"SP2020\",\n    \"tags\": \"#knowledge,#SP2020\",\n    \"status\": \"Ditolak\",\n    \"nama\": \"Hendra Kusuma\",\n    \"profile_photo\": \"874576510.png\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit Konten",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "judul",
+									"value": "Coba Edit",
+									"type": "text"
+								},
+								{
+									"key": "isi_konten",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "thumbnail",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "kategori",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "tags",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{baseUrl}}/api/content/{{contentId}}"
+					},
+					"response": [
+						{
+							"name": "Edit Konten",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "judul",
+											"value": "Coba Edit",
+											"type": "text"
+										},
+										{
+											"key": "isi_konten",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "thumbnail",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "kategori",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "tags",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{baseUrl}}/api/content/{{contentId}}"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 08 Dec 2022 10:25:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.29"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://127.0.0.1:5173"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization, Token"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-control",
+									"value": "no-store, max-age=0, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"error\": null,\n    \"messages\": {\n        \"success\": \"Konten Berhasil Diubah\",\n        \"id\": \"kolom-identifikasi-kejadian-kematian-diisi-jumlah-kejadian-kematian-63876a1f867aa\",\n        \"data\": {\n            \"judul\": \"Coba Edit\",\n            \"isi_konten\": \"\",\n            \"thumbnail\": \"\",\n            \"tanggal\": \"2022/12/08 17:25:34\",\n            \"status\": \"Menunggu\",\n            \"kategori\": \"\",\n            \"tags\": \"\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Hapus Konten",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{baseUrl}}/api/content/{{contentId}}"
+					},
+					"response": [
+						{
+							"name": "Hapus Konten",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{baseUrl}}/api/content/analisis-ketenagakerjaan-menggunakan-big-data-63876ac7b6c08"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 08 Dec 2022 10:26:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.29"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://127.0.0.1:5173"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization, Token"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-control",
+									"value": "no-store, max-age=0, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"messages\": {\n        \"contentId\": \"analisis-ketenagakerjaan-menggunakan-big-data-63876ac7b6c08\",\n        \"success\": \"Konten berhasil dihapus.\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Approval",
+			"item": [
+				{
+					"name": "Tambah Feedback",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "feedback",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "from",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{baseUrl}}api/approval/{{contentId}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Terima Konten",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "status",
+									"value": "Disetujui",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{baseUrl}}/api/approval/{{contentId}}"
+					},
+					"response": [
+						{
+							"name": "Terima Konten",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "status",
+											"value": "Disetujui",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{baseUrl}}/api/approval/{{contentId}}"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 08 Dec 2022 10:36:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.29"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://127.0.0.1:5173"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization, Token"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-control",
+									"value": "no-store, max-age=0, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"error\": null,\n    \"messages\": {\n        \"contentId\": \"asfd-638ad8804bced\",\n        \"success\": \"Status Berhasil Diubah menjadi Disetujui\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Tolak Konten",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "status",
+									"value": "Ditolak",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{baseUrl}}/api/approval/{{contentId}}"
+					},
+					"response": [
+						{
+							"name": "Tolak Konten",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "status",
+											"value": "Ditolak",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{baseUrl}}/api/approval/coba-buat-638b5503afba5"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 08 Dec 2022 10:37:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.29"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://127.0.0.1:5173"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization, Token"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-control",
+									"value": "no-store, max-age=0, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"error\": null,\n    \"messages\": {\n        \"contentId\": \"coba-buat-638b5503afba5\",\n        \"success\": \"Status Berhasil Diubah menjadi Ditolak\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Lihat Konten",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/approval/?search=&username=&page=&sort=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"approval",
+								""
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": ""
+								},
+								{
+									"key": "username",
+									"value": ""
+								},
+								{
+									"key": "page",
+									"value": ""
+								},
+								{
+									"key": "sort",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pengaturan Pengguna",
+			"item": [
+				{
+					"name": "Ubah Role",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "role",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{baseUrl}}/api/user/{{username}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Lihat Pengguna",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/user"
+					},
+					"response": []
+				},
+				{
+					"name": "Lihat Role",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/user/role"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pengaturan Kategori",
+			"item": [
+				{
+					"name": "Buat Kategori",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "New Category",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{baseUrl}}/api/category"
+					},
+					"response": [
+						{
+							"name": "Buat Kategori",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "New Category",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{baseUrl}}/api/category"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 08 Dec 2022 10:31:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.29"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://127.0.0.1:5173"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization, Token"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-control",
+									"value": "no-store, max-age=0, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"error\": null,\n    \"messages\": {\n        \"name\": \"New Category\",\n        \"id\": 469,\n        \"success\": \"Kategori berhasil ditambahkan.\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Lihat Kategori",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/category?search&limit=10&page=1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"category"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Lihat Kategori",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/category?search&limit=10&page=1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"category"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": null
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 08 Dec 2022 10:31:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.29"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://127.0.0.1:5173"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization, Token"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-control",
+									"value": "no-store, max-age=0, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"kategori\": [\n        {\n            \"kategoriId\": \"23\",\n            \"nama_kategori\": \"Administrasi\"\n        },\n        {\n            \"kategoriId\": \"22\",\n            \"nama_kategori\": \"Big Data\"\n        },\n        {\n            \"kategoriId\": \"448\",\n            \"nama_kategori\": \"Big Data untuk Statistik Ekonomi\"\n        },\n        {\n            \"kategoriId\": \"464\",\n            \"nama_kategori\": \"Big Data untuk Statistik Sosial\"\n        },\n        {\n            \"kategoriId\": \"12\",\n            \"nama_kategori\": \"CAPI\"\n        },\n        {\n            \"kategoriId\": \"466\",\n            \"nama_kategori\": \"CAWI\"\n        },\n        {\n            \"kategoriId\": \"460\",\n            \"nama_kategori\": \"Dashboard Monitoring\"\n        },\n        {\n            \"kategoriId\": \"445\",\n            \"nama_kategori\": \"Data Engineering\"\n        },\n        {\n            \"kategoriId\": \"432\",\n            \"nama_kategori\": \"Data Exploration\"\n        },\n        {\n            \"kategoriId\": \"455\",\n            \"nama_kategori\": \"Data Hub\"\n        }\n    ],\n    \"total\": 74,\n    \"pager\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Hapus Kategori",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{baseUrl}}/api/category/{{kategori}}"
+					},
+					"response": [
+						{
+							"name": "Hapus Kategori",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{baseUrl}}/api/category/{{kategori}}"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 08 Dec 2022 10:33:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.29"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://127.0.0.1:5173"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization, Token"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-control",
+									"value": "no-store, max-age=0, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"error\": null,\n    \"messages\": {\n        \"success\": \" Kategori : New Category berhasil dihapus\",\n        \"id\": \"469\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Ubah Kategori",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "new edit",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{baseUrl}}/api/category/{{kategori}}"
+					},
+					"response": [
+						{
+							"name": "Ubah Kategori",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "new edit",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{baseUrl}}/api/category/470"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 08 Dec 2022 10:36:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.29"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://127.0.0.1:5173"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization, Token"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-control",
+									"value": "no-store, max-age=0, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"error\": null,\n    \"messages\": {\n        \"from\": \"New Category\",\n        \"to\": \"new edit\",\n        \"success\": \"Kategori Berhasil Diubah.\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Unit Kerja",
+			"item": [
+				{
+					"name": "Lihat Unit Kerja",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/unitkerja"
+					},
+					"response": [
+						{
+							"name": "Lihat Unit Kerja",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}/api/unitkerja"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 08 Dec 2022 10:30:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.29"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://127.0.0.1:5173"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization, Token"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-control",
+									"value": "no-store, max-age=0, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"error\": null,\n    \"unit_kerja\": [\n        {\n            \"id\": \"1\",\n            \"unit_kerja_kode\": \"1\",\n            \"unit_kerja\": \"Tim SP\"\n        },\n        {\n            \"id\": \"2\",\n            \"unit_kerja_kode\": \"2\",\n            \"unit_kerja\": \"Kepala Badan Pusat Statistik\"\n        },\n        {\n            \"id\": \"3\",\n            \"unit_kerja_kode\": \"3\",\n            \"unit_kerja\": \"Users\"\n        },\n        {\n            \"id\": \"4\",\n            \"unit_kerja_kode\": \"4\",\n            \"unit_kerja\": \"Sekretariat Utama\"\n        },\n        {\n            \"id\": \"5\",\n            \"unit_kerja_kode\": \"5\",\n            \"unit_kerja\": \"Deputi Bidang Metodologi dan Informasi Statistik\"\n        },\n        {\n            \"id\": \"6\",\n            \"unit_kerja_kode\": \"6\",\n            \"unit_kerja\": \"Deputi Bidang Statistik Sosial\"\n        },\n        {\n            \"id\": \"7\",\n            \"unit_kerja_kode\": \"7\",\n            \"unit_kerja\": \"Deputi Bidang Statistik Produksi\"\n        },\n        {\n            \"id\": \"8\",\n            \"unit_kerja_kode\": \"8\",\n            \"unit_kerja\": \"Deputi Bidang Statistik Distribusi dan Jasa\"\n        },\n        {\n            \"id\": \"9\",\n            \"unit_kerja_kode\": \"9\",\n            \"unit_kerja\": \"Deputi Bidang Neraca dan Analisis Statistik\"\n        },\n        {\n            \"id\": \"10\",\n            \"unit_kerja_kode\": \"10\",\n            \"unit_kerja\": \"BPS Propinsi\"\n        }\n    ],\n    \"total\": 600,\n    \"pager\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Konten",
+			"item": [
+				{
+					"name": "Lihat Konten",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/view/{{contentId}}"
+					},
+					"response": [
+						{
+							"name": "Lihat Konten",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}/api/view/{{contentId}}"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 08 Dec 2022 10:29:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.29"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://127.0.0.1:5173"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization, Token"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-control",
+									"value": "no-store, max-age=0, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"contentId\": \"kolom-identifikasi-kejadian-kematian-diisi-jumlah-kejadian-kematian-63876a1f867aa\",\n    \"username\": \"hendra\",\n    \"tanggal\": \"2022-12-08 17:25:34\",\n    \"judul\": \"Coba Edit\",\n    \"isi_konten\": \"\",\n    \"thumbnail\": \"\",\n    \"liked\": \"0\",\n    \"commented\": \"0\",\n    \"kategori\": \"\",\n    \"tags\": \"\",\n    \"status\": \"Menunggu\",\n    \"nama\": \"Hendra Kusuma\",\n    \"profile_photo\": \"874576510.png\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Lihat Komentar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/comment/{{contentId}}"
+					},
+					"response": [
+						{
+							"name": "Lihat Komentar",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}/api/comment/jaminan-keamanan-data-sp-online-2020-638761fdd6f72"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 08 Dec 2022 10:29:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.29"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://127.0.0.1:5173"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization, Token"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-control",
+									"value": "no-store, max-age=0, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"49\",\n        \"contentId\": \"jaminan-keamanan-data-sp-online-2020-638761fdd6f72\",\n        \"username\": \"rayhan\",\n        \"isi_comment\": \"<p>Terima kasih penjelasannya</p>\",\n        \"tanggal\": \"2022-11-30 00:00:00\",\n        \"nama\": \"Rayhan Zaki Abrar\",\n        \"profile_photo\": \"9774243071.png\"\n    },\n    {\n        \"id\": \"50\",\n        \"contentId\": \"jaminan-keamanan-data-sp-online-2020-638761fdd6f72\",\n        \"username\": \"hendra\",\n        \"isi_comment\": \"<p>Baik, Sukseskan SP2020 !!!</p>\",\n        \"tanggal\": \"2022-11-30 00:00:00\",\n        \"nama\": \"Hendra Kusuma\",\n        \"profile_photo\": \"874576510.png\"\n    },\n    {\n        \"id\": \"49\",\n        \"contentId\": \"jaminan-keamanan-data-sp-online-2020-638761fdd6f72\",\n        \"username\": \"rayhan\",\n        \"isi_comment\": \"<p>Terima kasih penjelasannya</p>\",\n        \"tanggal\": \"2022-11-30 00:00:00\",\n        \"nama\": \"Rayhan Zaki Abrar\",\n        \"profile_photo\": \"9774243071.png\"\n    },\n    {\n        \"id\": \"50\",\n        \"contentId\": \"jaminan-keamanan-data-sp-online-2020-638761fdd6f72\",\n        \"username\": \"hendra\",\n        \"isi_comment\": \"<p>Baik, Sukseskan SP2020 !!!</p>\",\n        \"tanggal\": \"2022-11-30 00:00:00\",\n        \"nama\": \"Hendra Kusuma\",\n        \"profile_photo\": \"874576510.png\"\n    },\n    {\n        \"id\": \"49\",\n        \"contentId\": \"jaminan-keamanan-data-sp-online-2020-638761fdd6f72\",\n        \"username\": \"rayhan\",\n        \"isi_comment\": \"<p>Terima kasih penjelasannya</p>\",\n        \"tanggal\": \"2022-11-30 00:00:00\",\n        \"nama\": \"Rayhan Zaki Abrar\",\n        \"profile_photo\": \"9774243071.png\"\n    },\n    {\n        \"id\": \"50\",\n        \"contentId\": \"jaminan-keamanan-data-sp-online-2020-638761fdd6f72\",\n        \"username\": \"hendra\",\n        \"isi_comment\": \"<p>Baik, Sukseskan SP2020 !!!</p>\",\n        \"tanggal\": \"2022-11-30 00:00:00\",\n        \"nama\": \"Hendra Kusuma\",\n        \"profile_photo\": \"874576510.png\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Tambah Komentar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "comment",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{baseUrl}}api/comment/{{contentId}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Komentar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{baseUrl}}/api/comment/{{commentId}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Like",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{baseUrl}}api/like/{{contentId}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Unlike",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/unlike/{{contentId}}?",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"unlike",
+								"{{contentId}}"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "If Liked",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}api/unlike/{{contentId}}?username",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"unlike",
+								"{{contentId}}"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "user1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{baseUrl}}/api/auth"
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "user1",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{baseUrl}}/api/auth"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8080"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 08 Dec 2022 10:29:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.29"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://127.0.0.1:5173"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization, Token"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-control",
+									"value": "no-store, max-age=0, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjEzNTY5OTk1MjQsIm5iZiI6MTM1NzAwMDAwMCwidXNlcm5hbWUiOiJ1c2VyMSIsInJvbGUiOiJBZG1pbmlzdHJhdG9yIiwibmFtYSI6IkJpbm9nIiwidW5pdF9rZXJqYSI6IkRlcHV0aSBCaWRhbmcgTmVyYWNhIGRhbiBBbmFsaXNpcyBTdGF0aXN0aWsifQ.pE8sQXUO5ofkMBIVuajzXDTE8LB7YN0zKJqfCoSUCkU\",\n    \"role\": \"Administrator\",\n    \"unit_kerja\": \"Deputi Bidang Neraca dan Analisis Statistik\",\n    \"username\": \"user1\",\n    \"success\": true\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjEzNTY5OTk1MjQsIm5iZiI6MTM1NzAwMDAwMCwidXNlcm5hbWUiOiJoZW5kcmEiLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsIm5hbWEiOiJIZW5kcmEgS3VzdW1hIiwidW5pdF9rZXJqYSI6IktlcGFsYSBCYWRhbiBQdXNhdCBTdGF0aXN0aWsifQ.48kOmoK4Y9Rh7BOLYYz5eu-Fv6Hdybybba63F-SEuyY"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080"
+		},
+		{
+			"key": "contentId",
+			"value": ""
+		},
+		{
+			"key": "username",
+			"value": ""
+		},
+		{
+			"key": "commentId",
+			"value": ""
+		},
+		{
+			"key": "kategori",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
